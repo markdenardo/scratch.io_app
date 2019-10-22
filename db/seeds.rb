@@ -13,7 +13,7 @@ Item.create([
 
   {name:"Space Invaders", date:1978, company:"Atari", description:"Space Invaders is a Japanese shooting video game released in 1978 by Taito. It was developed by Tomohiro Nishikado, who was inspired by other media: Breakout, The War of the Worlds, and Star Wars.", image:"https://atariage.com/2600/boxes/b_SpaceInvaders_Color_front.jpg"},
 
-  {name:"Breakout", date:"1976", company:"Atari", description:"Breakout is an arcade game developed and published by Atari, Inc., and released on May 13, 1976. It was conceptualized by Nolan Bushnell and Steve Bristow, influenced by the seminal 1972 Atari arcade game Pong, and built by Steve Wozniak, aided by Steve Jobs.", image:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mobygames.com%2Fgame%2Fbreakout_&psig=AOvVaw0JrMGUYe6WB14Wx5FqQ9TG&ust=1571774693162000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIDDpZeTruUCFQAAAAAdAAAAABAF"},
+  {name:"Breakout", date:"1976", company:"Atari", description:"Breakout is an arcade game developed and published by Atari, Inc., and released on May 13, 1976. It was conceptualized by Nolan Bushnell and Steve Bristow, influenced by the seminal 1972 Atari arcade game Pong, and built by Steve Wozniak, aided by Steve Jobs.", image:"https://i.pinimg.com/originals/27/99/52/279952a8bca6601bae750fe8b5d6920c.jpg"},
 
   {name:"Spy Hunter", date:"1983", company:"Midway Games", description:"Spy Hunter is an overhead view, vehicular combat game developed by Bally Midway and released in arcades in 1983. The game draws inspiration from the James Bond films and was originally supposed to carry the James Bond license.", image:"https://cdn11.bigcommerce.com/s-m92i69d8x0/images/stencil/1280x1775/products/9146/11414/Spy_Hunter__46538.1506496056.jpg?c=2&imbypass=on"},
 

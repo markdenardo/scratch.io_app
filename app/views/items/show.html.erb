@@ -1,0 +1,6 @@
+<h1><%= @item.name %></h1>
+
+<%= image_tag @item.image %><br>
+<%= @item.description %>
+
+<%= button_to "All Items", items_path, method: :get%>
