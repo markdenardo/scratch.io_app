@@ -1,6 +1,23 @@
 <h1>New User</h1>
 
   <%= form_for @user do |f| %>
-    <%= f.text_field :name, prompt: true %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name, prompt: true %>
+
+  <%= f.label :username %>
+  <%= f.text_field :username, prompt: true %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password, prompt: true %>
+
     <%= f.submit %>
   <% end %>
+
+  <% if flash[:errors] %>
+      <ul>
+        <% flash[:errors].each do |error| %>
+          <li class="error"><%= error %></li>
+        <% end %>
+      </ul>
+    <% end %>

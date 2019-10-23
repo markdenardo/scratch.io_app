@@ -4,9 +4,8 @@ Order.destroy_all
 Post.destroy_all
 
 5.times do
-  User.create(name: Faker::Games::SuperSmashBros.fighter)
+  User.create(name:Faker::Name.name, username: Faker::Games::SuperSmashBros.fighter, password_digest: "poop")
 end
-
 
 Item.create([
   {name:"Pong", date:1972, company:"Atari", description:"Pong is one of the earliest arcade video games. It is a table tennis sports game featuring simple two-dimensional graphics. The game was originally manufactured by Atari, which released it in 1972. Allan Alcorn created Pong as a training exercise assigned to him by Atari co-founder Nolan Bushnell.", image:"https://images-na.ssl-images-amazon.com/images/I/51HrAvTyiUL._QL40_SX400_.jpg"},

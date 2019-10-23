@@ -13,8 +13,12 @@ class UsersController < ApplicationController
 
   def create
     @user=User.create(check_params)
+    if User.valid?
     redirect_to users_path
+  else
+    flash[:errors] = user.errors.full_messages
   end
+end
 
   def edit
     @user = User.find(params[:id])
@@ -36,7 +40,7 @@ class UsersController < ApplicationController
   private
 
   def check_params
-    params.require(:user).permit(:name)
+    params.require(:user).permit(:name, :username, :password)
   end
 
 end

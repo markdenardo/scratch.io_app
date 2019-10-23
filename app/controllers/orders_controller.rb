@@ -8,7 +8,7 @@ class OrdersController < ApplicationController
       order = Order.create(order_params)
 
       if order.valid?
-        redirect_to pizzas_path
+        redirect_to orders_path
       else
         redirect_to new_order_path
       end
