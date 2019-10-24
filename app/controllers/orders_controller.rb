@@ -5,10 +5,10 @@ class OrdersController < ApplicationController
     end
 
     def create
-      order = Order.create(order_params)
+      @order = Order.create(order_params)
 
-      if order.valid?
-        redirect_to order_path
+      if @order.valid?
+        redirect_to new_post_path
       else
         redirect_to new_order_path
       end

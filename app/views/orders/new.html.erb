@@ -5,7 +5,7 @@
   <%= t.label :name %>
   <%= t.collection_select(:user_id, User.all, :id, :name, prompt: true) %>
 
-  <%= t.label :name %>
+  <%= t.label :Item %>
   <%= t.collection_select(:item_id, Item.all, :id, :name, prompt: true) %>
 
   <%= t.submit %>
