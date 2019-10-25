@@ -1,0 +1,16 @@
+<h1>Create a New Post</h1>
+
+
+<%= form_for @post do |t| %>
+  <%= t.label :name %>
+  <%= t.collection_select(:user_id, User.all, :id, :name, prompt: true) %>
+
+  <%= t.label :name %>
+  <%= t.collection_select(:item_id, Item.all, :id, :name, prompt: true) %>
+
+  <%= t.submit %>
+<% end %>
+
+
+
+//

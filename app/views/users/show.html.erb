@@ -1,3 +1,15 @@
 <h2>This is <%=link_to @user.name, edit_user_path%> page.</h2>
 
+<% @user.items.each do |item| %>
+
+  <%= item.name %>
+
+<% end %>
+
 <%= button_to "Home User", users_path, method: :get%>
+
+<h3>wrote about these games:</h3><br>
+
+<% @user.posts.each do |post| %>
+  <%= post.item.name %>
+<% end %>

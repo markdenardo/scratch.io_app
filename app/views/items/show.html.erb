@@ -1,6 +1,12 @@
 <h1><%= @item.name %></h1>
 
 <%= image_tag @item.image %><br>
+<br>
+<h3>Description:</h3>
+<%= @item.date %>
+<%= @item.company %>
+<br>
+<br>
 <%= @item.description %>
 
 <%= button_to "All Items", items_path, method: :get%>

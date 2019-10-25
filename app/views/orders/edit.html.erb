@@ -1,0 +1,11 @@
+<h1>Edit Your Orders</h1>
+
+<%= for_for @order do |t| %>
+  <%= t.lable :name %>
+  <%= t.text_field :name %>
+
+  <%= t.lable :item %>
+  <%= t.text_field :item %>
+<%= t.submit %>
+
+<% end %>
